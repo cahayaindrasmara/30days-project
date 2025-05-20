@@ -1,11 +1,37 @@
 body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.clock-container {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #0f172a;
-    font-family: 'Segoe UI', sans-serif;
-    color: #f1f5f9;
+    transition: color 0.3s, background 0.3s;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 24px;
     margin: 0;
 }
 
+/*Tema siang*/
+.day {
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+/*Tema malam*/
+.night {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
