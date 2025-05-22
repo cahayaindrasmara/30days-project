@@ -62,10 +62,14 @@ li {
     cursor: pointer;
 }
 
-li.done {
+li > button {
+    margin-left: 5px;
+}
+
+span.done {
     text-decoration: line-through;
     color: gray;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 button.delete {
@@ -79,4 +83,18 @@ button.delete {
 
 button.delete:hover {
     background: #c82333;
+}
+
+button.edit {
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button.edit:hover {
+    background: #e0a800;
 }
